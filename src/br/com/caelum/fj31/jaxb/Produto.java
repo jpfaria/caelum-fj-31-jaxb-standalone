@@ -9,6 +9,8 @@ public class Produto {
 	private String nome;
 	private String descricao;
 	
+	private Categoria categoria;
+	
 	public double getPreco() {
 		return preco;
 	}
