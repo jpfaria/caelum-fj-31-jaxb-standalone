@@ -17,6 +17,11 @@ public class TesteMarshal {
 		produto.setPreco(20.34);
 		produto.setDescricao("uma bola quadrada");
 		
+		Categoria categoria = new Categoria();
+		categoria.setNome("esporte");
+		
+		produto.setCategoria(categoria);
+		
 		JAXBContext context = JAXBContext.newInstance(Produto.class);
 		Marshaller marsheller = context.createMarshaller();
 		
